@@ -6,7 +6,7 @@ civil site, as twenty one-line use cases, each marked ready, close or
 roadmap, with worked examples for the ready ones.
 
 Plain HTML and CSS, served by GitHub Pages from `main`. Every picture comes
-from a public colour scan of an administration building, processed with
+from a demonstration scan of the administration building at the University of Idaho, processed with
 [trimble-x9-bridge](https://github.com/northidaholabs/trimble-x9-bridge)
 (`x9-bridge register`, then `x9-bridge analyze`). `samples/admin/` is that
 run's full report.

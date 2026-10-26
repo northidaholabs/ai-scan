@@ -1,34 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="The laptop's agent reaches the MCP server on the Raspberry Pi over ssh on the USB-C cable; the MCP server calls x9-bridge over HTTP; an optional worker on the laptop takes registration jobs from the bridge; the bridge drives the Trimble X9 over the scanner's Wi-Fi or USB; the laptop keeps its own internet and nothing routes through the Pi." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="The laptop's agent reaches the MCP server on the controller over ssh on the USB-C cable; the MCP server calls x9-bridge over HTTP; an optional worker on the laptop takes registration jobs from the bridge; the bridge drives the Trimble X9 over the scanner's Wi-Fi or USB; the laptop keeps its own internet and nothing routes through the controller. The controller can be a Raspberry Pi." font-family="Manrope, sans-serif">
   <style>
-    .box { fill: #f6f8fa; stroke: #d0d7de; }
-    .sub { fill: #ffffff; stroke: #d0d7de; }
-    .key { fill: #ddf4ff; stroke: #0969da; }
-    .t { fill: #1f2328; }
-    .m { fill: #57606a; }
-    .ln { stroke: #57606a; fill: none; }
-    .lnf { fill: #57606a; }
-    .acc { stroke: #0969da; fill: none; }
-    .accf { fill: #0969da; }
-    .cable { fill: #eaeef2; }
-    @media (prefers-color-scheme: dark) {
-      .box { fill: #161b22; stroke: #30363d; }
-      .sub { fill: #0d1117; stroke: #30363d; }
-      .key { fill: #0c2d6b; stroke: #4493f8; }
-      .t { fill: #e6edf3; }
-      .m { fill: #8b949e; }
-      .ln { stroke: #8b949e; }
-      .lnf { fill: #8b949e; }
-      .acc { stroke: #4493f8; }
-      .accf { fill: #4493f8; }
-      .cable { fill: #21262d; }
-    }
+    .box { fill: #e7efe8; stroke: #c5d4cb; }
+    .sub { fill: #f4f7f5; stroke: #c5d4cb; }
+    .key { fill: #f4f7f5; stroke: #a84826; }
+    .t { fill: #152019; }
+    .m { fill: #3a4d42; }
+    .ln { stroke: #3a4d42; fill: none; }
+    .lnf { fill: #3a4d42; }
+    .acc { stroke: #a84826; fill: none; }
+    .accf { fill: #a84826; }
+    .cable { fill: #d5e0d8; }
   </style>
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="lnf"/></marker>
     <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="accf"/></marker>
   </defs>
 
-  <!-- The USB-C cable: everything between laptop and Pi goes over it -->
+  <!-- The USB-C cable: everything between laptop and controller goes over it -->
   <rect x="300" y="84" width="70" height="250" rx="6" class="cable"/>
   <text x="335" y="356" text-anchor="middle" font-size="12" font-weight="600" class="t">USB-C cable</text>
   <text x="335" y="372" text-anchor="middle" font-size="11" class="m">10.55.0.0/24</text>
@@ -51,10 +39,10 @@
   <line x1="162" y1="56" x2="162" y2="82" class="ln" stroke-width="1.5" marker-start="url(#a)"/>
   <text x="172" y="74" font-size="11" class="m">site Wi-Fi, Starlink</text>
 
-  <!-- Pi -->
+  <!-- Controller -->
   <rect x="370" y="84" width="276" height="250" rx="10" class="box"/>
-  <text x="390" y="110" font-size="15" font-weight="700" class="t">Raspberry Pi 4</text>
-  <text x="390" y="127" font-size="11" class="m">on the tripod</text>
+  <text x="390" y="110" font-size="15" font-weight="700" class="t">Controller</text>
+  <text x="390" y="127" font-size="11" class="m">can be a Raspberry Pi</text>
   <rect x="390" y="146" width="236" height="54" rx="8" class="sub"/>
   <text x="408" y="169" font-size="13" font-weight="600" class="t">MCP server</text>
   <text x="408" y="187" font-size="11" class="m">scanner_* tools</text>

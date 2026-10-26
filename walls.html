@@ -4,18 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wall plumb and flatness</title>
-<meta name="description" content="Check walls for plumb and flatness against a tolerance, with a heat map of every face: a worked example on a 19-station scan of an administration building.">
+<meta name="description" content="Check walls for plumb and flatness against a tolerance, with a heat map of every face: a worked example on a 19-station demonstration scan of the administration building at the University of Idaho.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
-  <a class="home" href="./">North Idaho Labs · AI-first scanning</a>
-  <nav><a href="./">All use cases</a><a href="https://github.com/northidaholabs">GitHub</a></nav>
+  <a class="mark" href="./" aria-label="AI-first scanning">
+    <img src="img/logo-badge.svg" width="40" height="40" alt="">
+    <span class="brand">North Idaho <em>Labs</em></span>
+  </a>
+  <nav><a href="./">All the work</a><a href="./#start">Start a scan</a><a href="https://northidaholabs.com/">The lab</a></nav>
 </header>
 <main>
 <p><span class="tag ready">Ready</span></p>
 <h1>Check walls for plumb and flatness against your tolerance</h1>
-<p class="lede">Every building wall the scan finds gets a best-fit plane, its lean from plumb, its flatness against that plane and against a straight line, and a heat map you can read without software.</p>
+<p class="lede">Every building wall the scan finds gets a best-fit plane, its lean from plumb, its flatness against that plane and against a straight line, and a heat map you can read without software. For the demonstration, we scanned the administration building at the University of Idaho.</p>
 
 <h2>1 · A real result</h2>
 <figure>
@@ -56,7 +62,7 @@
 <ul>
   <li>Stations that see each face you want checked; the agent marks faces nobody has seen yet and proposes where to stand next.</li>
   <li>Full-dome scans, registered as you go. Here: 19 stations around and inside the courtyard.</li>
-  <li>The analysis runs afterwards in about half a minute on a desktop for this site.</li>
+  <li>The analysis runs afterwards in about half a minute on a laptop for this site.</li>
   <li>Your tolerance: the straightedge length and the allowed gap (here 3 m and 6 mm).</li>
 </ul>
 
@@ -78,7 +84,7 @@
 </ul>
 </main>
 <footer>
-  <p>Made with <a href="https://github.com/northidaholabs/trimble-x9-bridge">trimble-x9-bridge</a> (<code>x9-bridge analyze</code>). Data: a public colour scan of an administration building. <a href="./">All use cases</a>.</p>
+  <p>Made with <a href="https://github.com/northidaholabs/trimble-x9-bridge">trimble-x9-bridge</a> (<code>x9-bridge analyze</code>). Data: a demonstration scan of the administration building at the University of Idaho. <a href="./">All use cases</a>.</p>
   <p>Not affiliated with or endorsed by Trimble Inc.</p>
 </footer>
 </body>

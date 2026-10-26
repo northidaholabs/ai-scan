@@ -4,23 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Whole-site record</title>
-<meta name="description" content="Document a whole site in one registered frame, with a map that redraws after every station: a worked example on a 19-station scan of an administration building.">
+<meta name="description" content="Document a whole site in one registered frame, with a map that redraws after every station: a worked example on a 19-station demonstration scan of the administration building at the University of Idaho.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
-  <a class="home" href="./">North Idaho Labs · AI-first scanning</a>
-  <nav><a href="./">All use cases</a><a href="https://github.com/northidaholabs">GitHub</a></nav>
+  <a class="mark" href="./" aria-label="AI-first scanning">
+    <img src="img/logo-badge.svg" width="40" height="40" alt="">
+    <span class="brand">North Idaho <em>Labs</em></span>
+  </a>
+  <nav><a href="./">All the work</a><a href="./#start">Start a scan</a><a href="https://northidaholabs.com/">The lab</a></nav>
 </header>
 <main>
 <p><span class="tag ready">Ready</span></p>
 <h1>Document a whole site in one registered frame, with a live map as you go</h1>
-<p class="lede">Each station is placed with the others the moment it lands, checked by independent tests, and drawn on a map the agent and the person can both see. By the time you leave, the site is already one point cloud.</p>
+<p class="lede">Each station is placed with the others the moment it lands, checked by independent tests, and drawn on a map the agent and the person can both see. By the time you leave, the site is already one point cloud. For the demonstration, we scanned the administration building at the University of Idaho.</p>
 
 <h2>1 · A real result</h2>
 <div class="grid2">
   <figure>
-    <img src="img/admin-plan.jpg" alt="Top-down view of all 19 registered stations of an administration building and its surroundings, with numbered stations and wall labels.">
+    <img src="img/admin-plan.jpg" alt="Top-down view of all 19 registered stations of the administration building at the University of Idaho and its surroundings, with numbered stations and wall labels.">
     <figcaption>All 19 stations in one frame, seen from above.</figcaption>
   </figure>
   <figure>
@@ -32,7 +38,7 @@
   <div><b>19 of 19</b><span>stations placed and confirmed</span></div>
   <div><b>22 mm</b><span>the most any two overlapping stations disagree</span></div>
   <div><b>9 of 9</b><span>planted wrong placements caught by the audit</span></div>
-  <div><b>~47 s</b><span>to place a station on the Raspberry Pi in the field</span></div>
+  <div><b>~47 s</b><span>to place a station on the controller in the field</span></div>
 </div>
 <figure style="max-width: 460px;">
   <img src="img/admin-coverage.png" alt="Coverage plan of one station: what it saw densely, sparsely, and where it was blocked.">
@@ -48,7 +54,7 @@
 
 <h2>3 · What it takes on site</h2>
 <ul>
-  <li>One person with the scanner on a tripod, and a laptop with the agent; a Raspberry Pi on the tripod runs the bridge.</li>
+  <li>One person with the scanner on a tripod, and a laptop with the agent. A controller on the tripod runs the scanner software. A Raspberry Pi works.</li>
   <li>The person says yes once per visit; the agent asks for each scan, checks it, and suggests the next station with a picture.</li>
   <li>Each new station needs to share walls with the ones before it; the agent says when one doesn't, before you move on.</li>
 </ul>
@@ -72,7 +78,7 @@
 </ul>
 </main>
 <footer>
-  <p>Made with <a href="https://github.com/northidaholabs/trimble-x9-bridge">trimble-x9-bridge</a> and <a href="https://github.com/northidaholabs/TrimbleX9-mcp">TrimbleX9-mcp</a>. Data: a public colour scan of an administration building. <a href="./">All use cases</a>.</p>
+  <p>Made with <a href="https://github.com/northidaholabs/trimble-x9-bridge">trimble-x9-bridge</a> and <a href="https://github.com/northidaholabs/TrimbleX9-mcp">TrimbleX9-mcp</a>. Data: a demonstration scan of the administration building at the University of Idaho. <a href="./">All use cases</a>.</p>
   <p>Not affiliated with or endorsed by Trimble Inc.</p>
 </footer>
 </body>
