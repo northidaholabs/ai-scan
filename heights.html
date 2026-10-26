@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heights and sections</title>
+<meta name="description" content="Measure building heights, roof edges and sections through a site: a worked example on a 19-station scan of an administration building.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="home" href="./">North Idaho Labs · AI-first scanning</a>
+  <nav><a href="./">All use cases</a><a href="https://github.com/northidaholabs">GitHub</a></nav>
+</header>
+<main>
+<p><span class="tag ready">Ready</span></p>
+<h1>Measure building heights, roof edges and sections through the site</h1>
+<p class="lede">Every building wall's top is measured against the ground at its foot, and any line you draw across the site becomes a section: the ground along it, with the walls it crosses at their measured height.</p>
+
+<h2>1 · A real result</h2>
+<figure>
+  <img src="img/section-1.png" alt="Section 112 m long across the site: the ground profile in green, three building walls as white vertical lines up to about 16 m.">
+  <figcaption>A section from station 1 across the building and courtyard to station 6, 112 m. Heights are stretched twice to fit.</figcaption>
+</figure>
+<figure>
+  <img src="img/wall-w6.png" alt="Heat map of a 15 m wall reaching 16.2 m above the ground, the tallest on the site.">
+  <figcaption>Wall w6, the tallest on the site: its top stands 16.2 m above the ground at its foot.</figcaption>
+</figure>
+<div class="facts">
+  <div><b>16.2 m</b><span>tallest wall top above its foot</span></div>
+  <div><b>14.6 – 15.9 m</b><span>the main facades' tops</span></div>
+  <div><b>8.2 – 8.4 m</b><span>the lower wing</span></div>
+  <div><b>3 m</b><span>fall of the ground across the site</span></div>
+</div>
+<figure>
+  <img src="img/section-2.png" alt="Section 55 m long down the south slope: the ground falls steadily.">
+  <figcaption>A second section, down the south slope from station 17 to station 15.</figcaption>
+</figure>
+
+<h2>2 · What you receive</h2>
+<ul>
+  <li>Each wall's top above the ground at its foot (in the walls table) and the tallest on the site.</li>
+  <li>Sections along the lines you choose, as pictures and as CSV (distance, position and ground height every 10 cm).</li>
+  <li>The walls on a DXF plan, in metres.</li>
+</ul>
+<p><a href="samples/admin/report.html">Open the full report for this site</a>.</p>
+
+<h2>3 · What it takes on site</h2>
+<ul>
+  <li>Stations far enough from each wall to see its top: about as far away as the wall is tall, where the site allows.</li>
+  <li>Ground seen in front of each wall, so its foot is known.</li>
+  <li>Section lines can be chosen afterwards, at the desk, as often as you like.</li>
+</ul>
+
+<h2>4 · How sure</h2>
+<div class="box caution">
+  <ul>
+    <li><b>The top of what was seen from the ground.</b> That is a parapet or a roof edge, not a roof behind it; a roof needs a scan from above.</li>
+    <li><b>The foot is the ground just in front of the wall,</b> 0.5 to 1.5 m out; a step or a bed there moves it.</li>
+    <li><b>Repeatable, not yet calibrated</b> against an independent height measurement.</li>
+  </ul>
+</div>
+</main>
+<footer>
+  <p>Made with <a href="https://github.com/northidaholabs/trimble-x9-bridge">trimble-x9-bridge</a> (<code>x9-bridge analyze</code>). Data: a public colour scan of an administration building. <a href="./">All use cases</a>.</p>
+  <p>Not affiliated with or endorsed by Trimble Inc.</p>
+</footer>
+</body>
+</html>

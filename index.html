@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-first scanning</title>
+<meta name="description" content="What one terrestrial laser scanner and an AI agent can do on a building or civil site: twenty one-line use cases, each marked ready, close or roadmap, with worked examples.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="home" href="./">North Idaho Labs · AI-first scanning</a>
+  <nav><a href="#how">How it works</a><a href="https://github.com/northidaholabs">GitHub</a></nav>
+</header>
+<main>
+<h1>What one laser scanner and an agent can do on your site</h1>
+<p class="lede">An AI agent runs a Trimble X9 through an open bridge: it plans the stations, checks every scan, registers the site as it goes, and turns the result into numbers and drawings. Here is what that covers today, and what doesn't yet.</p>
+
+<div class="legend">
+  <span><span class="tag ready">Ready</span> works, with a public example to look at</span>
+  <span><span class="tag close">Close</span> the parts work; needs a report, a recipe or a public example</span>
+  <span><span class="tag road">Roadmap</span> needs a new capability</span>
+</div>
+
+<section class="group">
+<h2>Building construction <small>8</small></h2>
+<ul class="cases">
+  <li class="ready"><span class="tag ready">Ready</span><a class="what" href="walls.html">Check walls for plumb and flatness against your tolerance, with a heat map of every face</a></li>
+  <li><span class="tag close">Close</span><span class="what">Measure every window and door opening for the fabricator, with an uncertainty per opening<span class="note">Works in the field; public example to come</span></span></li>
+  <li><span class="tag close">Close</span><span class="what">Check slab flatness and level before flooring<span class="note">Same ground analysis as outdoors; no public indoor example yet</span></span></li>
+  <li><span class="tag close">Close</span><span class="what">Track weekly progress from the same stations<span class="note">Visits compare when they share a frame; change maps work for the ground</span></span></li>
+  <li><span class="tag close">Close</span><span class="what">Record walls before drywall closes them: pipes, conduit and studs to find later</span></li>
+  <li><span class="tag close">Close</span><span class="what">Produce a measured plan of an existing building for renovation design<span class="note">Wall plans export to DXF and points to LAS; interiors not shown yet</span></span></li>
+  <li><span class="tag road">Roadmap</span><span class="what">Compare as-built against your design model, wall by wall</span></li>
+  <li><span class="tag road">Roadmap</span><span class="what">Check scanned ducts and beams against the planned MEP routes</span></li>
+</ul>
+</section>
+
+<section class="group">
+<h2>Civil and site work <small>7</small></h2>
+<ul class="cases">
+  <li class="ready"><span class="tag ready">Ready</span><a class="what" href="surfaces.html">Map roads and parking for bumps, ruts and where water will stand</a></li>
+  <li><span class="tag close">Close</span><span class="what">Measure stockpile volumes<span class="note">Volume arithmetic checked on a planted pile; no real pile scanned yet</span></span></li>
+  <li><span class="tag close">Close</span><span class="what">Measure cut and fill between two visits</span></li>
+  <li><span class="tag close">Close</span><span class="what">Watch retaining walls and embankments for lean or slumping over time</span></li>
+  <li><span class="tag close">Close</span><span class="what">Cut cross-sections of channels and culverts for capacity<span class="note">Sections work; see the heights page</span></span></li>
+  <li><span class="tag road">Roadmap</span><span class="what">Survey bridge decks, girders and clearances, year over year</span></li>
+  <li><span class="tag road">Roadmap</span><span class="what">Measure overhead line and pole clearances over roads</span></li>
+</ul>
+</section>
+
+<section class="group">
+<h2>Existing buildings and facilities <small>5</small></h2>
+<ul class="cases">
+  <li class="ready"><span class="tag ready">Ready</span><a class="what" href="site-record.html">Document a whole site in one registered frame, with a live map as you go</a></li>
+  <li class="ready"><span class="tag ready">Ready</span><a class="what" href="heights.html">Measure building heights, roof edges and sections through the site</a></li>
+  <li><span class="tag close">Close</span><span class="what">Map facade condition: bulges, spalling and where to look closer</span></li>
+  <li><span class="tag close">Close</span><span class="what">Check accessibility: door widths, ramp slopes and clearances</span></li>
+  <li><span class="tag close">Close</span><span class="what">Record a site before and after storm or flood damage</span></li>
+</ul>
+</section>
+
+<section id="how">
+<h2>How it works</h2>
+<figure>
+  <img src="img/connections.svg" alt="A laptop's agent reaches the MCP server on a Raspberry Pi over ssh on a USB-C cable; the server calls x9-bridge, which drives the Trimble X9 over its Wi-Fi or USB." style="background: transparent; border: 0;">
+</figure>
+<ol class="steps">
+  <li><b>On site:</b> a person carries the scanner and says yes once. The agent asks for each scan, looks at what it saw, and proposes the next station.</li>
+  <li><b>After every station:</b> the bridge places it with the others, checks the placement with independent tests, and redraws the site map.</li>
+  <li><b>Afterwards:</b> the registered scans become reports: wall heat maps, ground and water maps, sections, CSV and DXF.</li>
+</ol>
+<div class="box caution">
+  <b>How sure:</b> the numbers here are <i>repeatable</i> (stations agree with each other to a few millimetres), not yet checked against an independent measurement such as a tape, a level or a total station. Each page says what was and wasn't checked. Topographic and boundary work that needs a licensed surveyor's stamp still does: these results support that work, they don't replace it.
+</div>
+<p class="muted">Every picture on this site comes from a public colour scan of an administration building: 19 stations, replayed through the same bridge the field kit runs.</p>
+</section>
+</main>
+<footer>
+  <p>North Idaho Labs. The software is open: <a href="https://github.com/northidaholabs/trimble-x9-bridge">trimble-x9-bridge</a> (the bridge, registration and reports), <a href="https://github.com/northidaholabs/TrimbleX9-mcp">TrimbleX9-mcp</a> (the agent's tools) and <a href="https://github.com/northidaholabs/trimble-tzf">trimble-tzf</a> (the scan file decoder).</p>
+  <p>An independent interoperability project, not affiliated with or endorsed by Trimble Inc. "Trimble" and "X9" are trademarks of their respective owners.</p>
+</footer>
+</body>
+</html>
