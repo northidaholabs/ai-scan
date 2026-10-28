@@ -148,10 +148,19 @@
   <img src="img/connections.svg" alt="A laptop's agent reaches the MCP server on the controller over ssh on a USB-C cable. The controller can be a Raspberry Pi. It calls x9-bridge, which drives the Trimble X9 over its Wi-Fi or USB." style="background: transparent; border: 0;">
 </figure>
 <ol class="steps">
-  <li><b>On site:</b> you carry the scanner and say yes once. A foundation model, through MCP, looks at the station and marks the next setup and the landmarks.</li>
+  <li><b>On site:</b> you carry the scanner and say yes once. After each station, the software reads its points and picks where to set up next: open ground you can walk to, a real step out, that sees what this station couldn't and enough of what it did to join the two. A foundation model, through MCP, shows you that spot and the landmark beside it.</li>
   <li><b>After every station:</b> the software places it with the others, checks the placement with independent tests, and redraws the site map.</li>
   <li><b>Afterwards:</b> the registered scans become reports: wall heat maps, ground and water maps, sections, CSV and DXF.</li>
 </ol>
+<h3>Where to set up next</h3>
+<figure>
+  <img src="img/next-plan.jpg" alt="The first station from above: open ground in grey, walls in white, trees in green, and three numbered spots 25 to 38 m out, each tied to a landmark.">
+  <figcaption>The first station from above. Grey is ground, white is what stands at body height, green is canopy. The three spots, 25 to 38 m out, see the most of what this station couldn't.</figcaption>
+</figure>
+<figure>
+  <img src="img/next-station.jpg" alt="The first station's view: the clock tower marked as seen, the wing's far side as hidden, a lamp post as the landmark, and a tripod drawn its real size on the pavement beyond it, casting a shadow.">
+  <figcaption>The first spot on the view you have from the tripod. The scan knows how far off that pavement is, so the tripod and scanner are drawn the size they will be there, with their shadow on the ground. Tested with Claude Opus 5.5 and Grok 4.6: given the same plan, both put it here.</figcaption>
+</figure>
 <h3>Code and docs</h3>
 <ul>
   <li><a href="https://github.com/northidaholabs/trimble-x9-bridge">trimble-x9-bridge</a>: registration and reports; <a href="https://github.com/northidaholabs/trimble-x9-bridge/blob/main/ops/README.md">build a field kit</a> on a controller. A Raspberry Pi works.</li>
