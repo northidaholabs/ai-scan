@@ -2,19 +2,21 @@
 
 What the next edit has to keep.
 
-## One face, one picture
+## The outline stops at the corner
 
-The dotted outline on station 4 is the long wall and the gabled bay at the right. That is one line, 61.6 m, from (43.77, 25.08) to (101.44, 3.55). The visit states that face: 7.1 mm out of plumb over 13.8 m, flat to 9.4 mm RMS. The gabled bay stands about 0.9 m proud of the plane, toward the side the stations stood on, and the elevation draws it grey.
+The long wall is the face along the road. The gable at the right of station 4, and the gable facing station 3, is the end of the building. That end faces orthogonal to the long wall. The dotted outline stops at the corner. It does not wrap the end.
 
-The 44.4 m plane is the long stretch of that line. Its own result stays 4.1 mm over 14.6 m, flat to 7.6 mm RMS, and it stays on its own picture. A picture of that plane does not include the bay. Pasting the short end onto it does not make the outline.
+The visit states the long wall: 4.1 mm out of plumb over 14.6 m, flat to 7.6 mm RMS. The plane runs 44.4 m. Stations 3, 4, 5, and 6 saw it.
 
-## Why the bay was missing
+## A line through the end is a different face
 
-The detector keeps a run within 4 cm of a line and splits a gap wider than 0.6 m. The measurement keeps points within 30 cm of the line. The bay is about 0.9 m proud, so both leave it out. A band of 1.2 m takes the bay. Points more than 50 mm off the fitted plane draw grey, and the plumb number is the plane of what remains. The first pass over the whole line, still at 30 cm, saw 69% and withheld the number.
+w2 and w8 lie on one straight line in plan, with 9.4 m between them, 61.6 m end to end. The gable sits on that gap. Extending the measurement through it, and widening the band to 1.2 m, brought the end wall into the elevation and called it a bay 0.9 m proud of the plane. That end faces the other way. The 44.4 m plane stays the facade. Its picture stays its own.
+
+The detector keeps a run within 4 cm of a line and splits a gap wider than 0.6 m. The measurement keeps points within 30 cm of the line. A face across the corner can still fall inside a wider band.
 
 ## Check the line in the photo
 
-Project the wall into the station panorama before saying the outline and the elevation are the same face. Preview position is fitted from the scan's own points. The azimuth scale can run against the column index, and the raw header stores the negated start angle. On station 4 the long wall is the left of the photo and the bay is the gable at the right.
+Project the wall into the station panorama before saying the outline and the elevation are the same face. Preview position is fitted from the scan's own points. The azimuth scale can run against the column index, and the raw header stores the negated start angle. On station 4 the long wall is the left of the photo and the corner is where the gable begins. On station 3 the long wall is the receding face and the gable is the end toward the camera.
 
 Station 3 is the directing view. The tripod sits on the road in that view. The shelter is the landmark. About 40 m is the plan-grid separation of stations 3 and 4. Station 4 is the arrival, with the wall clear.
 
