@@ -62,6 +62,14 @@ h3{
   margin:16px 0 6px;
 }
 p.lede{font-size:18px;max-width:62ch;margin:0 0 20px}
+blockquote.prompt{
+  margin:0 0 12px;padding:0;border:0;
+  font-family:"Instrument Serif",serif;
+  font-size:26px;line-height:1.25;letter-spacing:-.02em;
+  font-weight:400;
+}
+blockquote.prompt::before{content:"\201C"}
+blockquote.prompt::after{content:"\201D"}
 .muted{color:var(--soft)}
 a{color:var(--ember-ink)}
 a:hover{color:var(--ink)}

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Surfaces and low spots</title>
-<meta name="description" content="Map roads and parking for bumps, ruts and where water will stand: a worked example on a 19-station demonstration scan of the administration building at the University of Idaho.">
+<meta name="description" content="Where will water stand in this lot? The administration building at the University of Idaho.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -19,14 +19,13 @@
   <nav><a href="./">All the work</a><a href="./#start">Start a scan</a><a href="https://northidaholabs.com/">The lab</a></nav>
 </header>
 <main>
-<p><span class="tag ready">Ready</span></p>
-<h1>Map roads and parking for bumps, ruts and where water will stand</h1>
-<p class="lede">The scans become a 10 cm height grid of the ground, cars left out. From it: the heights with contours, the bumps and dips against their surroundings, and the places water would collect. For the demonstration, we scanned the administration building at the University of Idaho.</p>
+<h1>Roads, ruts, and standing water</h1>
+<blockquote class="prompt">Where will water stand in this lot?</blockquote>
+<p class="lede">The administration building at the University of Idaho. Crowns stand up, gutters sit down, and the low places are numbered.</p>
 
-<h2>1 · A real result</h2>
 <figure>
   <img src="img/flatness.png" alt="Plan of the site coloured by height against the ground within 1.5 m: road crowns in red, gutters along the road edges in blue, kerbs in grey.">
-  <figcaption>Bumps and dips: each 10 cm cell against the ground within 1.5 m around it, so the site's slope drops out. Road crowns show red, gutters blue, kerbs and beds grey.</figcaption>
+  <figcaption>Crowns in red, gutters in blue. The slope of the site is taken out, so a bump shows as a bump.</figcaption>
 </figure>
 <div class="grid2">
   <figure>
@@ -46,40 +45,17 @@
 </div>
 <p class="muted">Not every low spot is a puddle. The deepest here (L1, 203 mm) is a planting bed in the courtyard. The report lists each one with its position, so someone can check it on site.</p>
 
-<h2>2 · What you receive</h2>
-<ul>
-  <li>The three maps above, a table of low spots (position, area, deepest point, volume) as CSV, and the low spots on the DXF plan.</li>
-  <li>The height grid itself, to compare with a later visit: cut and fill between the two.</li>
-  <li>Cross-sections along any line you choose (see <a href="heights.html">heights and sections</a>).</li>
-</ul>
-<p><a href="samples/admin/report.html">Open the full report for this site</a>.</p>
+<h2>What you get</h2>
+<p class="lede">The three maps, and each low place with where it is. A later visit of the same ground shows what was cut or filled. <a href="samples/admin/report.html">The report for this building</a>.</p>
 
-<h2>3 · What it takes on site</h2>
-<ul>
-  <li>Stations along the surfaces you care about, about every 15 to 25 m; ground farther than 30 m from every scanner is left out, as it is seen too flat to be trusted.</li>
-  <li>Cars and bins hide what is under them: they are recognised and left out, and the ground under them stays unknown.</li>
-  <li>The analysis takes about half a minute on a laptop for this 19-station site.</li>
-</ul>
+<h2>On site</h2>
+<p class="lede">Stations along the ground you care about. A car or a bin hides whatever is under it, and that patch stays blank.</p>
 
-<h2>4 · How sure</h2>
-<div class="box caution">
-  <ul>
-    <li><b>Water goes where the scan couldn't see.</b> A drain, a grate or a gap in the scan lets water out; the map treats unseen ground as an outlet. Check drains on site.</li>
-    <li><b>Repeatable, not yet calibrated.</b> Not yet compared with a level run or a total station on this site.</li>
-    <li><b>Volumes:</b> the cut-and-fill arithmetic was checked on this site's real height grid with a planted 18.85 m³ pile and a 2.40 m³ pit (it reported 18.84 and 2.40 m³). That checks the arithmetic, not two real visits; stockpiles stay <span class="tag close">Close</span> until a real pile has been scanned twice.</li>
-    <li><b>Not a stamped survey.</b> Topographic deliverables that need a licensed surveyor still do.</li>
-  </ul>
-</div>
-
-<h2>Code and docs</h2>
-<ul>
-  <li><a href="https://github.com/northidaholabs/trimble-x9-bridge/blob/main/docs/tools.md#deliverables-x9-bridge-analyze"><code>x9-bridge analyze</code>: what it computes, its outputs and its limits</a></li>
-  <li><a href="https://github.com/northidaholabs/trimble-x9-bridge/blob/main/crates/x9-bridge/src/analyze.rs">The code: <code>analyze.rs</code></a></li>
-  <li><a href="https://github.com/northidaholabs/trimble-x9-bridge/blob/main/docs/guide.md#registration-every-station-in-one-frame">Registration, which every result here builds on</a></li>
-</ul>
+<h2>Worth knowing</h2>
+<p class="lede">A drain the scan didn't see lets water out, and the map treats that gap as an outlet. Look at the drains. Where the job needs a surveyor's stamp, it still does.</p>
 </main>
 <footer>
-  <p>Made with <a href="https://github.com/northidaholabs/trimble-x9-bridge">trimble-x9-bridge</a> (<code>x9-bridge analyze</code>). Data: a demonstration scan of the administration building at the University of Idaho. <a href="./">All use cases</a>.</p>
+  <p>The administration building at the University of Idaho. <a href="./">The scans</a>.</p>
   <p>Not affiliated with or endorsed by Trimble Inc.</p>
 </footer>
 </body>
