@@ -1,34 +1,34 @@
-wall_id,kind,length_m,top_above_ground_m,out_of_plumb_mm,lean_mm_per_m,worst_strip_mm_per_m,worst_strip_at_m,flat_rms_mm,flat_p95_mm,straightedge_windows,straightedge_ok_pct,straightedge_worst_mm,features_pct,covered_pct,seen_by
-w1,building,49.21,15.92,46.5,3.2,5.4,17.5,15,37.3,6879,32.9,94.1,35,65.9,6 7 8 9 10 11 12
-w2,building,44.4,14.57,4.1,0.3,-1.6,44.5,7.6,10.4,10046,54.7,72.7,29.3,85.3,3 4 5 6
-w3,building,41.18,14.87,1.4,0.1,-1,4.5,8.9,18.2,7387,65.7,62.3,28,65.9,5 6 7 8 9 10 11
-w4,building,17.72,15.63,0.7,0,7.4,15.5,11.4,29.1,1472,39.3,57.3,34.9,43.3,8 9 10 11 12 13
-w5,building,15.76,8.39,103.6,12.5,15,0.5,22,43.9,870,54.8,103.2,48.8,73.1,8 9 10 11
-w6,building,15.37,16.21,3.1,0.2,-2.4,10.5,19.8,42,692,11.8,73.9,60.7,59.6,15 16 17 18
-w7,building,14.02,15.32,-2.4,-0.2,-1.1,6.5,11.4,31.9,2469,35.3,81,43,81.5,8 9 10 11 12
-w8,building,7.82,14.71,26.4,2,2.4,0.5,8.2,10.8,1152,61.9,61.3,32.5,70.4,1 2 3 4
-w9,building,7.74,14.95,-1.7,-0.1,0.9,0.5,7.8,12.4,1538,57.3,65.8,8.7,70.4,12 13 14 15
-w10,building,7.51,14.67,16,1.2,4.1,7.5,12.3,27.5,1121,50.8,70.7,31.7,67.5,15 16 17 18
-w11,building,6.98,8.17,25,3.1,3.4,0.5,7.9,20.2,509,57.2,47.7,41.7,87.9,8 9 10 11
-w12,building,5.49,15.71,27.4,1.8,4.4,1.5,16,35.6,843,29.2,64.3,42.4,77.4,8 9 10 11 12
-w13,building,5.25,8.85,12.2,1.5,1.9,0.5,6.1,6.8,973,59.5,51.1,3.9,98.4,5 6 7 8
-w14,building,5.14,12.89,3.4,0.3,2.1,3.5,20.4,38.4,200,0,68.9,39.9,44.6,6 7 8 9 10 11
-w15,building,4.13,13.58,33.6,2.9,3.7,4.5,20.4,44.8,175,0,72.2,60.3,80.5,15 16 17 18 19
-w16,building,4,8.85,5.4,0.7,0.8,3.5,4.6,5.1,701,60.3,41.8,1,99.9,6 7 8 9 10 11
-w17,building,3.95,12.96,-95.6,-8.4,-10.2,0.5,29.3,46.7,82,0,83.1,51.6,47.3,8 9 10
-w18,building,3.66,7.11,10.6,1.4,0.8,2.5,14.8,40.6,77,70.1,69.2,55.5,99.7,8 9 10 11
-w19,building,3.62,7.98,8.8,1.6,1.8,2.5,3.4,5,24,91.7,6.6,16.3,34.9,9 10 11
-w20,building,3.32,10.29,18.2,1.9,3.1,0.5,21.5,42.5,120,0,68.6,44.9,62.6,8 10 11
-w21,building,3.13,8.84,6.4,0.8,1,3.5,4.6,5.1,557,61.2,49.1,0.1,100,6 7 8
-w22,building,3.08,12.84,-79,-6.9,-6.3,1.5,29.3,46.1,102,0,75.3,46.4,53.8,8 9 10 11
-w23,building,3.02,11.33,174.3,19.8,20.5,2.5,24.1,44.1,266,13.5,94.7,33.3,87.3,8 9 10 11
-w24,building,2.92,,-8.4,-0.8,-1.1,1.5,23.1,42.6,135,0,79.3,60.3,86.3,14 15 16 17
-w25,building,2.76,6.52,-5.1,-1,-1.3,0.5,19.1,44.2,3,0,49.2,42.7,81.3,5 6
-w26,building,2.36,,-45.2,-4.4,-4.8,0.5,9,17.5,143,51,38.7,42.1,76.1,14 15 16 17
-w27,building,2.2,6.45,7,1.4,2,1.5,17.4,41.8,0,,,52.1,68.2,5 6
-w28,building,2.02,6.44,-18.5,-3.7,-6,0.5,18.3,41.5,0,,,42.1,29.1,5 6
-w29,building,1.92,,190.4,26.9,27.6,0.5,22.6,44,45,0,95.8,48.1,70.1,14 15 16 17
-w30,building,1.86,8.96,-34.4,-4.7,-4.9,0.5,22,41.4,49,0,61.3,34.4,70.3,8 9 10 11
-w31,building,1.83,9.01,-7.7,-0.9,-0.6,1.5,18.6,43.9,49,28.6,63,21.8,66.9,6 7 8
-w32,building,1.76,8.95,-4,-0.5,-0.5,1.5,16.5,36.9,203,81.8,34,7.6,91.2,6 7 8
-w33,building,1.75,8.37,-5.8,-0.7,-0.6,0.5,20.8,43.9,40,55,55.5,17.1,58,6 7 8
+wall_id,kind,length_m,top_above_ground_m,out_of_plumb_mm,lean_mm_per_m,worst_strip_mm_per_m,worst_strip_at_m,flat_rms_mm,flat_p95_mm,straightedge_windows,straightedge_ok_pct,straightedge_worst_mm,features_pct,covered_pct,seen_by,verdict,reason
+w1,building,49.21,15.92,,,,,,,6879,,,35,65.9,6 7 8 9 10 11 12,not_yet,"65% of the face is seen; 80% needed"
+w2,building,44.4,14.57,4.1,0.3,-1.6,44.5,7.6,10.4,10046,54.7,72.7,29.3,85.3,3 4 5 6,answer,""
+w3,building,41.18,14.87,,,,,,,7387,,,28,65.9,5 6 7 8 9 10 11,not_yet,"65% of the face is seen; 80% needed"
+w4,building,17.72,15.63,,,,,,,1472,,,34.9,43.3,8 9 10 11 12 13,not_yet,"43% of the face is seen; 80% needed"
+w5,building,15.76,8.39,,,,,,,870,,,48.8,73.1,8 9 10 11,not_yet,"73% of the face is seen; 80% needed"
+w6,building,15.37,16.21,,,,,,,692,,,60.7,59.6,15 16 17 18,not_yet,"59% of the face is seen; 80% needed"
+w7,building,14.02,15.32,-2.4,-0.2,-1.1,6.5,11.4,31.9,2469,35.3,81,43,81.5,8 9 10 11 12,answer,""
+w8,building,7.82,14.71,,,,,,,1152,,,32.5,70.4,1 2 3 4,not_yet,"70% of the face is seen; 80% needed"
+w9,building,7.74,14.95,,,,,,,1538,,,8.7,70.4,12 13 14 15,not_yet,"70% of the face is seen; 80% needed"
+w10,building,7.51,14.67,,,,,,,1121,,,31.7,67.5,15 16 17 18,not_yet,"67% of the face is seen; 80% needed"
+w11,building,6.98,8.17,25,3.1,3.4,0.5,7.9,20.2,509,57.2,47.7,41.7,87.9,8 9 10 11,answer,""
+w12,building,5.49,15.71,,,,,,,843,,,42.4,77.4,8 9 10 11 12,not_yet,"77% of the face is seen; 80% needed"
+w13,building,5.25,8.85,12.2,1.5,1.9,0.5,6.1,6.8,973,59.5,51.1,3.9,98.4,5 6 7 8,answer,""
+w14,building,5.14,12.89,,,,,,,200,,,39.9,44.6,6 7 8 9 10 11,not_yet,"44% of the face is seen; 80% needed"
+w15,building,4.13,13.58,,,,,,,175,,,60.3,80.5,15 16 17 18 19,does_not_fit,"the face is rougher than 15 mm RMS against one plane: stepped, not one wall, or seen too thinly to tell"
+w16,building,4,8.85,5.4,0.7,0.8,3.5,4.6,5.1,701,60.3,41.8,1,99.9,6 7 8 9 10 11,answer,""
+w17,building,3.95,12.96,,,,,,,82,,,51.6,47.3,8 9 10,not_yet,"47% of the face is seen; 80% needed"
+w18,building,3.66,7.11,,,,,,,77,,,55.5,99.7,8 9 10 11,does_not_fit,"the face is 3.7 m long; plumb needs 4 m of it"
+w19,building,3.62,7.98,,,,,,,24,,,16.3,34.9,9 10 11,not_yet,"34% of the face is seen; 80% needed"
+w20,building,3.32,10.29,,,,,,,120,,,44.9,62.6,8 10 11,not_yet,"62% of the face is seen; 80% needed"
+w21,building,3.13,8.84,,,,,,,557,,,0.1,100,6 7 8,does_not_fit,"the face is 3.1 m long; plumb needs 4 m of it"
+w22,building,3.08,12.84,,,,,,,102,,,46.4,53.8,8 9 10 11,not_yet,"53% of the face is seen; 80% needed"
+w23,building,3.02,11.33,,,,,,,266,,,33.3,87.3,8 9 10 11,does_not_fit,"the face is 3.0 m long; plumb needs 4 m of it"
+w24,building,2.92,,,,,,,,135,,,60.3,86.3,14 15 16 17,does_not_fit,"the face is 2.9 m long; plumb needs 4 m of it"
+w25,building,2.76,6.52,,,,,,,3,,,42.7,81.3,5 6,does_not_fit,"the face is 2.8 m long; plumb needs 4 m of it"
+w26,building,2.36,,,,,,,,143,,,42.1,76.1,14 15 16 17,not_yet,"76% of the face is seen; 80% needed"
+w27,building,2.2,6.45,,,,,,,0,,,52.1,68.2,5 6,not_yet,"68% of the face is seen; 80% needed"
+w28,building,2.02,6.44,,,,,,,0,,,42.1,29.1,5 6,not_yet,"29% of the face is seen; 80% needed"
+w29,building,1.92,,,,,,,,45,,,48.1,70.1,14 15 16 17,not_yet,"70% of the face is seen; 80% needed"
+w30,building,1.86,8.96,,,,,,,49,,,34.4,70.3,8 9 10 11,not_yet,"70% of the face is seen; 80% needed"
+w31,building,1.83,9.01,,,,,,,49,,,21.8,66.9,6 7 8,not_yet,"66% of the face is seen; 80% needed"
+w32,building,1.76,8.95,,,,,,,203,,,7.6,91.2,6 7 8,does_not_fit,"the face is 1.8 m long; plumb needs 4 m of it"
+w33,building,1.75,8.37,,,,,,,40,,,17.1,58,6 7 8,not_yet,"57% of the face is seen; 80% needed"

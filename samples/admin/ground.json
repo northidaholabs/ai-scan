@@ -1,0 +1,8 @@
+{
+  "cell": 0.1,
+  "format": "little-endian f32, row-major from (x0, y0), NaN unknown",
+  "h": 1931,
+  "w": 1801,
+  "x0": -32.300000000000004,
+  "y0": -124.4
+}

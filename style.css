@@ -160,3 +160,9 @@ footer a{color:var(--ember-ink)}
 @media(max-width:700px){
   .pair,.grid2{grid-template-columns:1fr}
 }
+
+/* One mission, as the person sees it: phone frames side by side where there is room. */
+.frames{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px 24px;margin:8px 0 28px}
+.frames figure{margin:0}
+.frames figure img{max-width:390px;border-radius:14px;border:1px solid rgba(255,255,255,.08)}
+.frames figcaption{max-width:none;font-size:15px}
