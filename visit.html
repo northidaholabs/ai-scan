@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The visit | North Idaho Labs</title>
-<meta name="description" content="The long facade of the administration building. Station 3 is the end, with trees in front of the tower. The setup is about 40 m along the road, where the wall is clear.">
+<meta name="description" content="You start with a mission. The AI suggests a first scan. After that scan, the result is where to stand next, on the view you already have.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -20,27 +20,23 @@
 </header>
 <main>
 <h1>The visit</h1>
-<p class="lede">The long facade of the administration building at the University of Idaho.</p>
+<p class="lede">You start with a mission. The AI suggests a first scan. After that scan, the result is where to stand next, drawn on the view you already have, so the mission can be answered. On the administration building a mission might be the wall a new opening has to meet, the parapet a lift has to reach, the water on the walks, or one map for the crew.</p>
 
-<h2>Station 3, before the facade</h2>
-<p class="lede">Trees stand in front of the tower. The long wall is the face along the road.</p>
-
-<h2>Where to stand</h2>
+<h2 id="facade">The wall a new opening has to meet</h2>
+<blockquote class="prompt">Is the long facade plumb, within a quarter inch in ten feet?</blockquote>
+<p class="lede">The suggestion is a first scan with the wall in view. Station 3 is that scan. Drawn on it is where to stand next: on the road, about 40 m along the wall, past the shelter.</p>
+<h3>Where to stand</h3>
 <p class="lede">On the road, about 40 m along the wall, past the shelter.</p>
 <figure>
-  <img src="img/station-3.jpg" alt="Station 3's view. The long wall is marked seen, the tower behind the trees is marked hidden, the shelter is the landmark, and the next setup is drawn on the road.">
+  <img src="img/station-3.jpg?v=4" alt="Station 3's view. The long wall is marked seen, the shelter is the landmark, and the next setup is drawn on the road past it.">
   <figcaption>Set up on the road, about 40 m along the wall, past the shelter.</figcaption>
 </figure>
-
-<h2>From that spot</h2>
+<h3>From that spot</h3>
 <p class="lede">Nothing stands in front of the wall.</p>
 <figure>
-  <img src="img/station-4.jpg" alt="Station 4's view of the long wall, marked seen. Nothing stands in front of it.">
+  <img src="img/station-4.jpg?v=2" alt="Station 4's view of the long wall, marked seen. Nothing stands in front of it.">
   <figcaption>From the road. The outline stops where the wall turns.</figcaption>
 </figure>
-
-<h2>The long facade</h2>
-<blockquote class="prompt">Is the long facade plumb, within a quarter inch in ten feet?</blockquote>
 <p>4.1 mm out of plumb (3/16 in) over 14.6 m. The top leans toward the side it was scanned from. The tolerance gives no allowance for 14.6 m of height. Flat to 7.6 mm RMS. Stations 3, 4, 5, and 6 saw it. The plane runs 44.4 m.</p>
 <figure>
   <img src="img/wall-w2.png" alt="Heat map of the 44.4 m plane. Red stands proud of the plane. Blue sits back.">
@@ -48,7 +44,53 @@
 </figure>
 <p class="ask"><a href="walls.html">Open the walls</a></p>
 
-<h2>The long facade is answered.</h2>
+<h2 id="height">The parapet, and how high the lift goes</h2>
+<blockquote class="prompt">How tall is the wall, from the ground at its foot?</blockquote>
+<p class="lede">The suggestion is a first scan with the bays in view. Station 17 is that scan. The top is still ahead, and drawn on the picture is where to stand next: on the road, about 30 m past the rail.</p>
+<h3>Where to stand</h3>
+<p class="lede">On the road, about 30 m past the rail.</p>
+<figure>
+  <img src="img/station-17.jpg?v=1" alt="Station 17's view. The arched wall is marked seen, the rail is the landmark, and the next setup is drawn on the road past it.">
+  <figcaption>Set up on the road, about 30 m past the rail.</figcaption>
+</figure>
+<h3>From that spot</h3>
+<p class="lede">The top of the wall is in view.</p>
+<figure>
+  <img src="img/station-16.jpg?v=2" alt="Station 16's view of the arched wall, marked seen. The top of the wall is in view.">
+  <figcaption>From the road. The outline is the arched bays.</figcaption>
+</figure>
+<p>16.2 m, from the ground at its foot to the parapet the scan saw. Stations 15, 16, 17, and 18 saw it. The wall runs 15.4 m.</p>
+<figure>
+  <img src="img/wall-w6.png" alt="Heat map of the 15.4 m wall. Grey is the openings. Its top stands 16.2 m above the ground at its foot.">
+  <figcaption>The 15.4 m wall. Grey is the openings.</figcaption>
+</figure>
+<p class="ask"><a href="heights.html">Open the heights</a></p>
+
+<h2 id="water">The walks, and the water already there</h2>
+<blockquote class="prompt">Where will water stand in this lot?</blockquote>
+<p class="lede">The mission is the water. The scans the other missions asked for already hold the ground. Crowns stand up. Gutters sit down. The road by station 4, the setup for the long wall, is one of the low places.</p>
+<figure>
+  <img src="img/flatness.png" alt="Plan of the site coloured by height against the ground within 1.5 m: road crowns in red, gutters along the road edges in blue.">
+  <figcaption>Crowns in red, gutters in blue. The slope of the site is taken out, so a bump shows as a bump.</figcaption>
+</figure>
+<figure>
+  <img src="img/low_spots.png" alt="Plan of the site with places where water would stand shaded blue and numbered by volume.">
+  <figcaption>Where water would stand before spilling over the ground around it, numbered by volume.</figcaption>
+</figure>
+<p>23 places of 0.5 m² or more, 10 mm or deeper. On the road by station 4, one of them holds 74 litres: 5.6 m², 28 mm deep. The deepest, 203 mm, is a planting bed in the courtyard. The ground falls about 3 m across the site.</p>
+<p class="ask"><a href="surfaces.html">Open the ground</a></p>
+
+<h2 id="site">One map for the crew</h2>
+<blockquote class="prompt">Give me the whole site in one map.</blockquote>
+<p class="lede">The mission is one map. Each mission placed a station. The mason, the windows, and the paving are looking at those stations in one frame.</p>
+<figure>
+  <img src="img/admin-plan.jpg" alt="Top-down view of all 19 registered stations, with numbered stations and wall labels.">
+  <figcaption>All 19 stations in one frame, seen from above.</figcaption>
+</figure>
+<p>The most any two overlapping stations disagree is 22 mm. The map is redrawn after every station.</p>
+<p class="ask"><a href="site-record.html">Open the site record</a></p>
+
+<h2>You leave with the record.</h2>
 <p class="ask"><a href="mailto:contact@northidaholabs.com?subject=Site%20scan&amp;body=Site%20address%3A%0A%0AWhat%20the%20scan%20has%20to%20answer%3A%0A">Start a scan</a></p>
 </main>
 <footer>
