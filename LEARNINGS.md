@@ -4,7 +4,7 @@ What the next edit has to keep.
 
 ## The visit is one walk
 
-You start with a mission. The AI suggests a first scan. After that scan, the result on that view is where to stand next so the mission can be answered. The chapters are the jobs that walk asks: the wall a new opening meets (stations 3 and 4, 4.1 mm over 14.6 m), the parapet a lift has to reach (stations 17 and 16, 16.2 m), the water already on the walks (23 places, 74 litres by station 4), and one map for the crew (19 stations, 22 mm). The building's real work is masonry, parapets, windows, and walks. The page does not say this scan was any particular renovation. A new use case is another stop on the same walk.
+You start with a mission. The agent proposes a first scan. After that scan, the result on that view is where to stand next so the mission can be answered. The chapters are the jobs that walk asks: the wall a new opening meets (stations 3 and 4, 4.1 mm over 14.6 m), the parapet a lift has to reach (stations 17 and 16, 16.2 m), the water already on the walks (23 places, 74 litres by station 4), and one map for the crew (19 stations, 22 mm). The building's real work is masonry, parapets, windows, and walks. The page does not say this scan was any particular renovation. A new use case is another stop on the same walk.
 
 # The facade
 
