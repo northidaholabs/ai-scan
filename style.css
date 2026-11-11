@@ -108,6 +108,7 @@ ul.cases li.ready .go{
   font-weight:600;text-underline-offset:4px;
 }
 figure{margin:18px 0 24px}
+figure picture{display:block}
 figure img{width:100%;height:auto;display:block;background:var(--night)}
 figcaption{color:var(--soft);margin-top:8px;max-width:68ch}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
@@ -139,7 +140,7 @@ main{min-width:0;width:min(960px,100%);overflow-x:clip}
 .lead .metric{margin-top:10px;font-weight:600}
 .lead > article > a{display:inline-flex;align-items:center;min-height:44px;margin-top:6px;font-weight:600}
 .lead img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--night)}
-.lead img.section{aspect-ratio:auto;object-fit:contain;height:auto}
+.lead img.section,.lead img.plan{aspect-ratio:auto;object-fit:contain;height:auto}
 .lead figure{margin:0 0 16px}
 .group h2{font-size:26px;color:var(--soft);margin-top:32px}
 .index{list-style:none;padding:0;margin:0;font-size:16px}
