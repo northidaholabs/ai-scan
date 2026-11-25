@@ -1,0 +1,26 @@
+---
+description: A site goes live only from a commit GitHub has.
+alwaysApply: true
+---
+
+# Deploy from a commit
+
+What is live must be something git can show. Ten deploys in November 2026 named
+no pull request, and five of those came from local files with no commit at all.
+
+1. Never deploy from uncommitted files. Commit and push first, then deploy from
+   that commit. If the site's files are not in a git repo, stop and tell Jim.
+2. This site is GitHub Pages: a push to `main` is the deploy. So nothing reaches
+   `main` that Jim has not seen, and the commit you report is the one Pages built.
+3. A pull request is the normal route. A direct commit to the default branch is
+   allowed only where the repo's own rules allow it, and never for a change
+   Jim has not seen.
+4. When you publish `site.deployed`, always give `repo=<owner/name>` and
+   `commit=<full sha>`: the commit that is live. The bus refuses a deploy
+   without them, and the project board checks the commit against GitHub. Give
+   `pr=<URL>` when there was a pull request. When there was none, give
+   `pr=none` and say why in the note. Never put a hash, a branch name or a
+   reason in `pr`.
+5. A change that is not a deploy (an organisation setting, a DNS record, a
+   console change) is not `site.deployed`. Tell Jim and let him decide where it
+   is recorded.
